@@ -110,8 +110,8 @@ p{
 	margin: 0 7px;
 }
 
-.icon-nav li{
-	float: left;
+.icon-nav {
+	float: right;
 }
 .icon-nav li + li{
 	margin-left: 30px;
