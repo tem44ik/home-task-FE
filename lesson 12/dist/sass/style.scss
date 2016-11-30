@@ -1,0 +1,63 @@
+// custom var
+@import "custom";
+
+// fonts 
+@import "fonts";
+
+// bootstrap 
+@import "bootstrap";
+
+// reset 
+@import "reset";
+
+// default-class 
+@import "default-class";
+
+// layout 
+@import "layout";
+
+
+// style for corusel on index
+.carousel{
+	margin-right: -15px;
+}
+.carousel-caption{
+	left: 0;
+	right: auto;
+	bottom: 60px;
+	text-align: left;
+	padding: 20px 25px 20px 70px;
+	background: $lightGreen;
+	span{
+		color: $greyTextColor;
+		font-size: 2.143em;
+	}
+}
+.carousel-indicators{
+	li{
+
+	}
+	.active{
+
+	}
+}
+.advanteges{
+	@extend %indents70;
+
+}
+//style for sidebar
+.sidebar-list{
+
+}
+.title{
+	padding-top: 70px;
+	padding-bottom: 45px;
+}
+.vidjet{
+	padding-top: 45px;
+}
+.buydiplomText{
+	height: 300px;
+	line-height: 24px;
+}
+
