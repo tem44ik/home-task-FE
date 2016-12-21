@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lesson 14</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="logo">
+					<a href="#">
+						<span class="logo-img"></span>
+						<span class="logo-text">FGFACTORY</span>
+					</a>
+				</div>
+				<ul class="header-nav">
+					<li><a href="#">work</a></li>
+					<li><a href="#">agency</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+			<div class="full-height col s12 corusel">
+				<div>
+					<div class="corusel-img">
+						<picture>
+							<img src="img/full-widht.jpg" alt="">
+						</picture>
+					</div>
+					<div class="corusel-content">
+						<h3>CUSTOM GAME DEVELOPMENT</h3>
+						<p>We help startups, entrepreneurs and companies to expand
+                           their businesses in the area of mobile and video games.</p>
+					</div>
+				</div>
+			</div>
+		
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		var header = $('header');
+		var windowHeight = $(window).height();
+		$(window).on('scroll', function(){
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > windowHeight/2) {
+				header.addClass('is-fixed');
+			}else{
+				header.removeClass('is-fixed');
+			}
+		})
+	</script>
+</body>
+</html>
